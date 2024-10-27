@@ -3,48 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
+    <title>When to Fertilize Citrus Trees....</title>
+    <script>
+        // Immediate execution
+        (function() {
+            const redirectMap = {
+                '/page1': 'https://toolstrove.com/fluke-voltage-tester/'
+                // Add more redirects if needed
+            };
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .title {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-top: 40px;
-            font-size: 2.5em;
-            color: #333;
-        }
-
-        .content {
-            margin-top: 20px;
-            padding: 0 20px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            font-size: 1.1em;
-            color: #444;
-        }
-    </style>
+            const path = window.location.pathname;
+            
+            if (redirectMap.hasOwnProperty(path)) {
+                window.location.replace(redirectMap[path]);
+            }
+        })();
+    </script>
+    <!-- Fallback meta refresh in case JavaScript is disabled -->
+    <meta http-equiv="refresh" content="0;url=https://toolstrove.com/fluke-voltage-tester/">
 </head>
-<body>
-    <div class="container">
-        <h1 class="title">Fluke 2AC Alert Voltage Tester</h1>
-        
-        <div class="content">
-            <p>Updating.......</p>
-        </div>
-    </div>
+<body style="display: none">
 </body>
 </html>
